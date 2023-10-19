@@ -73,7 +73,7 @@ nav{
     width: 100%;
 }
 .swiper3{
-    width: 100%;
+    min-width: 125%;
 }
 .recent_right_handle{
     height: 420px;
@@ -197,6 +197,7 @@ nav{
     contain: content;
     border-radius: 10px;
     min-width: 442px;
+    width: 100%;
 }
 .swiper-slide img{
     width: 100%;
