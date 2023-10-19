@@ -1,5 +1,5 @@
 
-let swiper = new Swiper(".swiper", {
+const swiper = new Swiper(".swiper", {
   spaceBetween: 30,
   centeredSlides: true,
   slidesPerView: 1.3,
@@ -15,7 +15,7 @@ let swiper = new Swiper(".swiper", {
   },
 });
 
- var swiper2 = new Swiper(".swiper2", {
+ const swiper2 = new Swiper(".swiper2", {
   spaceBetween: 50,
   slidesPerView: 3,
   simulateTouch: false,
@@ -26,7 +26,7 @@ let swiper = new Swiper(".swiper", {
   }
  });
 
- var swiper3 = new Swiper(".swiper3", {
+ const swiper3 = new Swiper(".swiper3", {
   spaceBetween: 50,
   slidesPerView: 3,
   simulateTouch: false,
