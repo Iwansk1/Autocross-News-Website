@@ -17,7 +17,7 @@ let swiper = new Swiper(".swiper", {
 
  var swiper2 = new Swiper(".swiper2", {
   spaceBetween: 50,
-  slidesPerView: 4,
+  slidesPerView: 3,
   simulateTouch: false,
   loop: true,
   navigation: {
@@ -30,7 +30,7 @@ let swiper = new Swiper(".swiper", {
   spaceBetween: 50,
   slidesPerView: 3,
   simulateTouch: false,
-  loop: true,
+  centeredSlides: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

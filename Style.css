@@ -196,6 +196,7 @@ nav{
     align-items: center;
     contain: content;
     border-radius: 10px;
+    min-width: 442px;
 }
 .swiper-slide img{
     width: 100%;
