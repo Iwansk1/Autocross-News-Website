@@ -19,6 +19,7 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 50,
   slidesPerView: 3,
   simulateTouch: false,
+  centeredSlides: true,
   loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -27,15 +28,29 @@ const swiper = new Swiper(".swiper", {
  });
 
  const swiper3 = new Swiper(".swiper3", {
-  spaceBetween: 50,
+  spaceBetween: 30,
   slidesPerView: 3,
   simulateTouch: false,
-  centeredSlides: false,
+  centeredSlides: true,
+  loop: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   }
  });
+
+ const swiper4 = new Swiper(".swiper4", {
+  spaceBetween: 30,
+  slidesPerView: 3,
+  simulateTouch: false,
+  centeredSlides: false,
+  loop: false,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+ });
+
 
 
 
