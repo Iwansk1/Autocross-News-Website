@@ -40,8 +40,9 @@ const swiper = new Swiper(".swiper", {
  });
 
  const swiper4 = new Swiper(".swiper4", {
-  spaceBetween: 30,
+  spaceBetween: 20,
   slidesPerView: 3,
+  slidesPerGroup: 2,
   simulateTouch: false,
   centeredSlides: false,
   loop: false,
