@@ -16,11 +16,13 @@ const swiper = new Swiper(".swiper", {
 });
 
  const swiper2 = new Swiper(".swiper2", {
-  spaceBetween: 50,
-  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerView: 4,
+  speed: 500,
+  centeredSlidesBounds: true,
   simulateTouch: false,
-  centeredSlides: true,
-  loop: true,
+  centeredSlides: false,
+  rewind: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -30,9 +32,10 @@ const swiper = new Swiper(".swiper", {
  const swiper3 = new Swiper(".swiper3", {
   spaceBetween: 30,
   slidesPerView: 3,
+  speed: 500,
   simulateTouch: false,
-  centeredSlides: true,
-  loop: true,
+  centeredSlides: false,
+  rewind: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -43,6 +46,7 @@ const swiper = new Swiper(".swiper", {
   spaceBetween: 20,
   slidesPerView: 3,
   slidesPerGroup: 2,
+  speed: 500,
   simulateTouch: false,
   centeredSlides: false,
   loop: false,
