@@ -68,7 +68,7 @@ nav{
     display: flex;
     width: 100%;
 }
-.recent_right_handle{
+.recent_right_handle, .fotos_right_handle{
     height: 420px;
     width: 114px;
     background: linear-gradient(-90deg, rgb(255, 255, 255) 7.55%, rgba(51, 51, 51, 0) 92%);
@@ -76,7 +76,7 @@ nav{
     z-index: 2;
     right: 0;
 }
-.recent_left_handle{
+.recent_left_handle, .fotos_left_handle{
     height: 420px;
     width: 114px;
     background: linear-gradient(90deg, rgb(255, 255, 255) 7.55%, rgba(51, 51, 51, 0) 92%);
@@ -178,8 +178,6 @@ nav{
     justify-content: center;
     align-items: center;
     contain: content;
-    border-radius: 10px;
-    min-width: 442px;
     width: 100%;
 }
 .swiper-slide img{
@@ -187,7 +185,7 @@ nav{
     height: 100%;
     transition: 0.3s ease-in-out;
 }
-.popular_news_container img:hover, .swiper-button-next:hover, .swiper-button-prev:hover{
+.popular_news_container img:hover, .fotos_container img:hover, .swiper-button-next:hover, .swiper-button-prev:hover{
     scale: 125%;
 }
 .pagination{
@@ -235,7 +233,27 @@ nav{
     z-index: 2;
     right: 0;
 }
-
+.fotos_container{
+    display: flex;
+    padding: 5vh 0 5vh 5vh;
+}
+.fotos_box_wrapper{
+    position: relative;
+    width: 100%;
+}
+.fotos_content_wrapper{
+    position: relative;
+    background-color: #333;
+    border-radius: 10px;
+    width: 400px;
+}
+.fotos_image_container{
+    contain: content;
+    border-radius: 10px;
+}
+.fotos_desc_container{
+    padding: 10px;
+}
 
 /* .event_header{
     width: 300px;
