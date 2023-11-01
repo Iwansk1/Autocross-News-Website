@@ -17,9 +17,8 @@ const swiper = new Swiper(".swiper", {
 
  const swiper2 = new Swiper(".swiper2", {
   spaceBetween: 30,
-  slidesPerView: 4,
+  slidesPerView: 3,
   speed: 500,
-  centeredSlidesBounds: true,
   simulateTouch: false,
   centeredSlides: false,
   rewind: true,
