@@ -1,4 +1,5 @@
 
+//Swiper voor 'Head carousel'
 const swiper = new Swiper(".swiper", {
   spaceBetween: 30,
   centeredSlides: true,
@@ -15,9 +16,10 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
+//Swiper voor 'Recent news'
  const swiper2 = new Swiper(".swiper2", {
   spaceBetween: 30,
-  slidesPerView: 3,
+  slidesPerView: 4,
   speed: 500,
   simulateTouch: false,
   centeredSlides: false,
@@ -28,6 +30,7 @@ const swiper = new Swiper(".swiper", {
   }
  });
 
+ //Swiper voor 'Popular news'
  const swiper3 = new Swiper(".swiper3", {
   spaceBetween: 30,
   slidesPerView: 3,
@@ -41,9 +44,10 @@ const swiper = new Swiper(".swiper", {
   }
  });
 
+ //Swiper voor 'Events'
  const swiper4 = new Swiper(".swiper4", {
   spaceBetween: 20,
-  slidesPerView: 3,
+  slidesPerView: 4,
   slidesPerGroup: 2,
   speed: 500,
   simulateTouch: false,
@@ -55,6 +59,20 @@ const swiper = new Swiper(".swiper", {
   }
  });
 
+ //Swiper voor 'Foto's en Video's"
+ const swiper5 = new Swiper(".swiper5", {
+  spaceBetween: 20,
+  slidesPerView: 4,
+  speed: 500,
+  simulateTouch: true,
+  grabCursor: true,
+  centeredSlides: false,
+  loop: false,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  }
+ });
 
 
 
