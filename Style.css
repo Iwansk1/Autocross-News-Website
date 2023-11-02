@@ -255,7 +255,12 @@ nav{
 .fotos_desc_container{
     padding: 10px;
 }
-
+.swiper-slide.fotos{
+    filter: drop-shadow(0px 5px 5px #5558);
+}
+.swiper-wrapper.fotos{
+    height: 400px;
+}
 /* .event_header{
     width: 300px;
     max-width: 100%;
