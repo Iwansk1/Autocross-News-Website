@@ -1,0 +1,98 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style-type: none;
+}
+p,a{
+    color: #fff;
+    text-decoration: none;
+}
+button{
+    border: 0;
+    filter: drop-shadow(0px 1px 2px #5558);
+}
+body{
+    margin: 0 ;
+    min-height: 100vh;
+    max-width: 100dvw;
+    overflow-x: hidden;
+}
+nav{
+    background-color: #333;
+    width: 100%;
+}
+.menu ol{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    justify-content: end;
+    margin: 0;
+    align-items: center;
+    padding-right: 40px;
+}
+.menu li a{
+    font-size: 18px;
+}
+.menu li a:hover{
+    color: rgba(255, 0, 0, 1);
+    transition-duration: 500ms;
+}
+.logo{
+    margin-right: auto;
+    position: relative;
+}
+.fotos_videos_banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fotos_videos_banner img{
+    width: 100%;
+    height: auto;
+}
+.title{
+    position: absolute;
+    color: white;
+    font-size: 2.5em;
+    filter: drop-shadow(0px 5px 5px #5558);
+}
+.buttons_container{
+    padding-top: 5vh;
+}
+.year_buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+}
+.filter_button{
+    background-color: black;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter_button p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.filter_button:hover{
+    background: linear-gradient(0deg, rgba(152,0,0,1) 0%, rgba(232,0,0,1) 100%); 
+}
+.fotos_videos_2023{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.content_pieterzijl{
+    position: absolute;
+}
+.content_text{
+    position: relative;
+    top: 10px;
+}
