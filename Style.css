@@ -122,12 +122,7 @@ nav{
     display: flex;
     width: 100%;
 }
-@media (max-width: 440px){
-    .swiper2{
-        display: flex;
-        width: 440px;
-    }
-}
+
 .recent_news_box{
     display: flex;
     overflow: hidden;
@@ -323,6 +318,23 @@ nav{
         display: none;
     }
     
+}
+@media (max-width: 440px){
+    .swiper2{
+        display: flex;
+        width: 100px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 440px){
+    .recent_news_box{
+        display: flex;
+        flex-direction: column;
+    }
+    .wrapper_desc_container{
+        display: none;
+    }
 }
 
 /* .event_header{

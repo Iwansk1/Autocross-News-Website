@@ -37,10 +37,9 @@ const swiper = new Swiper(".swiper", {
 //Swiper voor 'Recent news'
  const swiper2 = new Swiper(".swiper2", {
   spaceBetween: 10,
-  slidesPerView: 2,
+  slidesPerView: 1,
   speed: 500,
   centeredSlides: false,
-  autoheight: true,
   rewind: true,
   enabled: false,
   navigation: {
@@ -64,9 +63,18 @@ const swiper = new Swiper(".swiper", {
       slidesPerView: 4,
       spaceBetween: 40,
       simulateTouch: false,
-      enabled: true,
-    }
-
+      enabled: true
+    },
+    on: {
+      resize: function () {
+        // Check the window width and change direction if needed
+        if (window.innerWidth < 768) { // adjust this breakpoint as needed
+          this.changeDirection('vertical');
+        } else {
+          this.changeDirection('horizontal');
+        }
+      }
+    },
   }
  });
 
@@ -98,7 +106,6 @@ const swiper = new Swiper(".swiper", {
       spaceBetween: 30,
       simulateTouch: false,
     }
-
   }
  });
 
@@ -136,9 +143,7 @@ const swiper = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
       },
       simulateTouch: false,
-
     }
-
   }
  });
 
