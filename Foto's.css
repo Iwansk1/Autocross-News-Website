@@ -1,16 +1,22 @@
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
-ul{
+ul,li{
     list-style-type: none;
+}
+h1{
+    font-size: 26px;
+}
+h2{
+    font-size: 1em;
+}
+h3{
+    font-size: 1.2em;
 }
 p,a{
     color: #fff;
     text-decoration: none;
-}
-button{
-    border: 0;
-    filter: drop-shadow(0px 1px 2px #5558);
+    font-size: 1em;
 }
 body{
     margin: 0 ;
@@ -22,21 +28,53 @@ nav{
     background-color: #333;
     width: 100%;
 }
+.menu .toggle_btn{
+    color: white;
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    display: none;
+    transition: height 0.3s ease;
+}
+.dropdown_menu.open{
+    height: 220px;
+    z-index: 3;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .menu ol{
     display: flex;
-    list-style-type: none;
-    gap: 30px;
+    gap: 2rem;
     justify-content: end;
-    margin: 0;
+    margin: 0 auto;
     align-items: center;
     padding-right: 40px;
+    max-width: inherit;
 }
 .menu li a{
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 .menu li a:hover{
     color: rgba(255, 0, 0, 1);
     transition-duration: 500ms;
+}
+.menu li{
+    max-width: 1200px;
 }
 .logo{
     margin-right: auto;
@@ -58,7 +96,7 @@ nav{
     filter: drop-shadow(0px 5px 5px #5558);
 }
 .buttons_container{
-    padding-top: 5vh;
+    padding-top: 50px;
 }
 .year_buttons{
     display: flex;
@@ -84,15 +122,51 @@ nav{
     background: linear-gradient(0deg, rgba(152,0,0,1) 0%, rgba(232,0,0,1) 100%); 
 }
 .fotos_videos_2023{
-    padding: 50px;
+    padding-top: 50px;
+    overflow: hidden;
+}
+.fotos_videos_container{
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 50px;
 }
-.content_pieterzijl{
-    position: absolute;
+.fotos_videos_pieterzijl{
+    position: relative;
+    filter: drop-shadow(0px 5px 5px #5558);
+}
+.content_pieterzijl img{
+    width: 100%;
+    height: auto;
 }
 .content_text{
-    position: relative;
-    top: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 3vh;
+    font-size: 28px;
+    font-weight: 600;
+}
+.content:hover{
+    color: rgb(255, 0, 0);
+}
+@media(max-width: 992px){
+    .menu li{
+        display: none;
+    }
+
+    .menu .toggle_btn, .dropdown_menu li{
+        display: flex;
+    }
+    .dropdown_menu.open{
+        display: block;
+    }
+}
+@media(max-width: 576px){
+    .dropdown_menu{
+        left: 2rem;
+        width: auto;
+    }
 }

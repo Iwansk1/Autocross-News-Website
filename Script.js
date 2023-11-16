@@ -1,9 +1,21 @@
+const toggleBtn = document.querySelector('.toggle_btn')
+const toggleBtnIcon = document.querySelector('.toggle_btn i')
+const dropDownMenu = document.querySelector('.dropdown_menu')
+
+toggleBtn.onclick = function(){
+  dropDownMenu.classList.toggle("open")
+  const isOpen = dropDownMenu.classList.contains("open")
+
+  toggleBtnIcon.classList = isOpen
+  ? "fa-solid fa-xmark"
+  : "fa-solid fa-bars"
+}
 
 //Swiper voor 'Head carousel'
 const swiper = new Swiper(".swiper", {
   spaceBetween: 30,
   centeredSlides: true,
-  slidesPerView: 1.3,
+  slidesPerView: 1,
   loop: true,
   simulateTouch: false,
   autoplay: {
@@ -14,55 +26,126 @@ const swiper = new Swiper(".swiper", {
     el: ".swiper-pagination",
     clickable: false,
   },
+  breakpoints: {
+    640: {
+      slidesPerView: 1.3,
+      spaceBetween: 30,
+    }
+  }
 });
 
 //Swiper voor 'Recent news'
  const swiper2 = new Swiper(".swiper2", {
-  spaceBetween: 30,
-  slidesPerView: 4,
+  spaceBetween: 10,
+  slidesPerView: 2,
   speed: 500,
-  simulateTouch: false,
   centeredSlides: false,
+  autoheight: true,
   rewind: true,
+  enabled: false,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      simulateTouch: true,
+      enabled: true,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      simulateTouch: true,
+      enabled: true,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+      simulateTouch: false,
+      enabled: true,
+    }
+
   }
  });
 
  //Swiper voor 'Popular news'
  const swiper3 = new Swiper(".swiper3", {
-  spaceBetween: 30,
-  slidesPerView: 3,
+  spaceBetween: 10,
+  slidesPerView: 1,
   speed: 500,
-  simulateTouch: false,
   centeredSlides: false,
   rewind: true,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+      simulateTouch: true,
+
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      simulateTouch: true,
+    },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      simulateTouch: false,
+    }
+
   }
  });
 
  //Swiper voor 'Events'
  const swiper4 = new Swiper(".swiper4", {
-  spaceBetween: 20,
-  slidesPerView: 4,
+  spaceBetween: 10,
+  slidesPerView: 2,
   slidesPerGroup: 2,
   speed: 500,
-  simulateTouch: false,
   centeredSlides: false,
   loop: false,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 20,
+      simulateTouch: true,
+    },
+    768: {
+      slidesPerView: 3,
+      slidesPerGroup: 2,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      simulateTouch: true,
+    },
+    1440: {
+      slidesPerView: 4,
+      slidesPerGroup: 2,
+      spaceBetween: 90,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      simulateTouch: false,
+
+    }
+
   }
  });
 
  //Swiper voor 'Foto's en Video's"
  const swiper5 = new Swiper(".swiper5", {
-  spaceBetween: 20,
-  slidesPerView: 4,
+  spaceBetween: 50,
+  slidesPerView: 1,
   speed: 500,
   simulateTouch: true,
   grabCursor: true,
@@ -71,6 +154,20 @@ const swiper = new Swiper(".swiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1440: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    }
   }
  });
 
