@@ -100,7 +100,7 @@ nav{
 }
 .year_buttons{
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     gap: 50px;
     justify-content: center;
 }
@@ -131,6 +131,9 @@ nav{
     flex-flow: row wrap;
     gap: 50px;
 }
+.fotos_videos_container.year_2022{
+    display: none;
+}
 .fotos_videos_pieterzijl{
     position: relative;
     filter: drop-shadow(0px 5px 5px #5558);
@@ -145,8 +148,8 @@ nav{
     left: 0;
     right: 0;
     text-align: center;
-    padding-bottom: 3vh;
-    font-size: 28px;
+    padding-bottom: 15px;
+    font-size: 2rem;
     font-weight: 600;
 }
 .content:hover{
@@ -168,5 +171,24 @@ nav{
     .dropdown_menu{
         left: 2rem;
         width: auto;
+    }
+}
+@media (max-width: 640px){
+    .year_buttons{
+        gap: 20px;
+    }
+    .fotos_videos_container{
+        width: 100%;
+        flex-flow: row wrap;
+        gap: 20px;
+        justify-content: start;
+        padding-left: 8vw;
+    }
+    .fotos_videos_pieterzijl{
+        width: 40%;
+    }
+    .content_text{
+        font-size: 0.6em;
+        padding-bottom: 10px;
     }
 }
