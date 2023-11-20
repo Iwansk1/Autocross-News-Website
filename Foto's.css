@@ -5,7 +5,7 @@ ul,li{
     list-style-type: none;
 }
 h1{
-    font-size: 26px;
+    font-size: 5rem;
 }
 h2{
     font-size: 1em;
@@ -166,16 +166,26 @@ nav{
     .dropdown_menu.open{
         display: block;
     }
+    .title h1{
+        font-size: 2.5rem;
+    }
+    
 }
 @media(max-width: 576px){
     .dropdown_menu{
         left: 2rem;
         width: auto;
     }
+    .title h1{
+        font-size: 2rem;
+    }
+    .fotos_videos_2023, .buttons_container{
+        padding-top: 10px;
+    }
 }
 @media (max-width: 640px){
     .year_buttons{
-        gap: 20px;
+        gap: 10px;
     }
     .fotos_videos_container{
         width: 100%;
@@ -188,7 +198,8 @@ nav{
         width: 40%;
     }
     .content_text{
-        font-size: 0.6em;
+        font-size: 0.7em;
         padding-bottom: 10px;
     }
+    
 }
